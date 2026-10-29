@@ -1,0 +1,437 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f7f0e8;
+    color: #211a2a;
+    line-height: 1.8;
+}
+
+header {
+    background: #b9a0e8;
+    min-height: 620px;
+    overflow: hidden;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    border-bottom: 1px solid rgba(33, 26, 42, 0.2);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #211a2a;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+.hero {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    padding: 100px 30px 110px;
+    text-align: center;
+}
+
+.sticker {
+    display: inline-block;
+    padding: 5px 16px;
+    background: #f5a8c8;
+    border: 1px solid #211a2a;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    transform: rotate(-5deg);
+    margin-bottom: 25px;
+}
+
+.eyebrow,
+.section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(60px, 11vw, 120px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #f7f0e8;
+    -webkit-text-stroke: 1px #211a2a;
+}
+
+.hero-text {
+    max-width: 440px;
+    margin: 25px auto;
+    font-size: 15px;
+}
+
+.main-button {
+    display: inline-block;
+    background: #211a2a;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background: #f5a8c8;
+    color: #211a2a;
+    transform: translateY(-3px);
+}
+
+.star {
+    position: absolute;
+    font-size: 50px;
+    color: #f7f0e8;
+}
+
+.star-one {
+    top: 100px;
+    left: 12%;
+}
+
+.star-two {
+    top: 180px;
+    right: 13%;
+    font-size: 65px;
+}
+
+.star-three {
+    bottom: 60px;
+    left: 22%;
+    color: #f5a8c8;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 24px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e5d8e8;
+    border-radius: 14px;
+    padding: 40px;
+    margin-bottom: 60px;
+    box-shadow: 7px 7px 0 #e5d8e8;
+}
+
+.section-label {
+    color: #8964b7;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 5vw, 42px);
+    line-height: 1.3;
+    margin-bottom: 22px;
+}
+
+h2 em {
+    color: #a47acb;
+}
+
+.about p:not(.section-label),
+.ending p:not(.section-label) {
+    margin-bottom: 15px;
+    color: #665b6d;
+}
+
+.handwritten {
+    display: block;
+    color: #c25d8c;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: right;
+}
+
+.albums {
+    margin-bottom: 70px;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.album-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #e5d8e8;
+    transition: transform 0.3s;
+}
+
+.album-card:hover {
+    transform: translateY(-7px) rotate(-1deg);
+}
+
+.album-art {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.sour-art {
+    background: linear-gradient(145deg, #d8b9ed, #a98bd0);
+    color: #34213f;
+}
+
+.guts-art {
+    background: linear-gradient(145deg, #c5a4e7, #f2a4c7);
+    color: #34213f;
+}
+
+.album-symbol {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(35px, 7vw, 70px);
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.album-caption {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.art-star {
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    font-size: 45px;
+}
+
+.album-card h3 {
+    margin-top: 17px;
+    font-size: 22px;
+}
+
+.album-card > p {
+    font-size: 12px;
+    color: #8964b7;
+}
+
+.album-card .album-desc {
+    color: #665b6d;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.music {
+    background: #211a2a;
+    color: #f7f0e8;
+    box-shadow: 7px 7px 0 #d8b9ed;
+    border: none;
+}
+
+.music .section-label {
+    color: #f5a8c8;
+}
+
+.music h2 em {
+    color: #f5a8c8;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 16px 0;
+    border-bottom: 1px solid #493d52;
+    transition: padding 0.2s;
+}
+
+.song:hover {
+    padding-left: 10px;
+}
+
+.song-number {
+    color: #f5a8c8;
+    font-size: 13px;
+}
+
+.song h3 {
+    font-size: 15px;
+}
+
+.song p {
+    color: #b8aabd;
+    font-size: 12px;
+}
+
+.music-icon {
+    margin-left: auto;
+    color: #f5a8c8;
+    font-size: 25px;
+}
+
+.quote-section {
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 60px;
+    background: #f5a8c8;
+    border-radius: 14px;
+}
+
+.quote-section > span {
+    font-size: 28px;
+}
+
+.quote-section h2 {
+    max-width: 550px;
+    margin: 20px auto;
+}
+
+.quote-heart {
+    font-size: 45px;
+    color: #7c4267;
+    margin-top: 15px;
+}
+
+.ending {
+    text-align: center;
+}
+
+.ending .handwritten {
+    text-align: center;
+}
+
+footer {
+    background: #211a2a;
+    color: #f7f0e8;
+    text-align: center;
+    padding: 35px 20px;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.footer-small {
+    margin-top: 8px;
+    color: #b8aabd;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* TOMBOL SCROLL TO TOP */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 52px;
+    height: 52px;
+    border: 2px solid #211a2a;
+    border-radius: 50%;
+    background: #f5a8c8;
+    color: #211a2a;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+    opacity: 0.6;
+    z-index: 999;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+#scrollTopBtn:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    nav {
+        padding: 18px 20px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+    .hero {
+        padding: 90px 20px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .star-one {
+        left: 5%;
+    }
+
+    .star-two {
+        right: 5%;
+    }
+
+    .album-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    #scrollTopBtn {
+        right: 18px;
+        bottom: 18px;
+    }
+}
